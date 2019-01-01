@@ -5,7 +5,7 @@ def home(request):
     user = request.user
     if request.user.is_authenticated:
         user = request.user.first_name
-    template = 'base.html'
+    template = 'home.html'
     context = {
         "user": user
     }
